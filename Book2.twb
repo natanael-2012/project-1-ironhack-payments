@@ -1,0 +1,2673 @@
+<?xml version='1.0' encoding='utf-8' ?>
+
+<!-- build 20243.24.1010.1014                               -->
+<workbook original-version='18.1' source-build='2024.3.0 (20243.24.1010.1014)' source-platform='win' version='18.1' xmlns:user='http://www.tableausoftware.com/xml/user'>
+  <document-format-change-manifest>
+    <AnimationOnByDefault />
+    <MarkAnimation />
+    <ObjectModelEncapsulateLegacy />
+    <ObjectModelExtractV2 />
+    <ObjectModelTableType />
+    <SchemaViewerObjectModel />
+    <SheetIdentifierTracking />
+    <_.fcp.VConnDownstreamExtractsWithWarnings.true...VConnDownstreamExtractsWithWarnings />
+    <WindowsPersistSimpleIdentifiers />
+  </document-format-change-manifest>
+  <preferences>
+    <preference name='ui.encoding.shelf.height' value='24' />
+    <preference name='ui.shelf.height' value='26' />
+  </preferences>
+  <datasources>
+    <datasource caption='New cash table2' inline='true' name='federated.038fhsk0s1xanp1e45ekp153hlg8' version='18.1'>
+      <connection class='federated'>
+        <named-connections>
+          <named-connection caption='New cash table2' name='textscan.168h0od044msma10xebkv030e834'>
+            <connection class='textscan' directory='C:/Users/Natanael/Documents/Ironhack/week 2/project-1-ironhack-payments' filename='New cash table2.csv' password='' server='' />
+          </named-connection>
+        </named-connections>
+        <relation connection='textscan.168h0od044msma10xebkv030e834' name='New cash table2.csv' table='[New cash table2#csv]' type='table'>
+          <columns character-set='UTF-8' header='yes' locale='en_US' separator=','>
+            <column datatype='integer' name='F1' ordinal='0' />
+            <column datatype='integer' name='id' ordinal='1' />
+            <column datatype='real' name='amount' ordinal='2' />
+            <column datatype='string' name='status' ordinal='3' />
+            <column datatype='string' name='created_at' ordinal='4' />
+            <column datatype='string' name='updated_at' ordinal='5' />
+            <column datatype='real' name='user_id' ordinal='6' />
+            <column datatype='string' name='moderated_at' ordinal='7' />
+            <column datatype='real' name='deleted_account_id' ordinal='8' />
+            <column datatype='string' name='reimbursement_date' ordinal='9' />
+            <column datatype='date' name='cash_request_received_date' ordinal='10' />
+            <column datatype='string' name='money_back_date' ordinal='11' />
+            <column datatype='string' name='transfer_type' ordinal='12' />
+            <column datatype='string' name='send_at' ordinal='13' />
+            <column datatype='string' name='recovery_status' ordinal='14' />
+            <column datatype='string' name='reco_creation' ordinal='15' />
+            <column datatype='string' name='reco_last_update' ordinal='16' />
+            <column datatype='real' name='identifier' ordinal='17' />
+            <column datatype='string' name='first_cash_request' ordinal='18' />
+            <column datatype='string' name='cohort' ordinal='19' />
+          </columns>
+        </relation>
+        <metadata-records>
+          <metadata-record class='capability'>
+            <remote-name />
+            <remote-type>0</remote-type>
+            <parent-name>[New cash table2.csv]</parent-name>
+            <remote-alias />
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='character-set'>&quot;UTF-8&quot;</attribute>
+              <attribute datatype='string' name='collation'>&quot;en_US&quot;</attribute>
+              <attribute datatype='string' name='field-delimiter'>&quot;,&quot;</attribute>
+              <attribute datatype='string' name='header-row'>&quot;true&quot;</attribute>
+              <attribute datatype='string' name='locale'>&quot;en_US&quot;</attribute>
+              <attribute datatype='string' name='single-char'>&quot;&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>F1</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[F1]</local-name>
+            <parent-name>[New cash table2.csv]</parent-name>
+            <remote-alias>F1</remote-alias>
+            <ordinal>0</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[New cash table2.csv_CAE7F51470DB474592B54C9805C8D3DC]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>id</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[id]</local-name>
+            <parent-name>[New cash table2.csv]</parent-name>
+            <remote-alias>id</remote-alias>
+            <ordinal>1</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[New cash table2.csv_CAE7F51470DB474592B54C9805C8D3DC]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>amount</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[amount]</local-name>
+            <parent-name>[New cash table2.csv]</parent-name>
+            <remote-alias>amount</remote-alias>
+            <ordinal>2</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[New cash table2.csv_CAE7F51470DB474592B54C9805C8D3DC]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>status</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[status]</local-name>
+            <parent-name>[New cash table2.csv]</parent-name>
+            <remote-alias>status</remote-alias>
+            <ordinal>3</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+            <object-id>[New cash table2.csv_CAE7F51470DB474592B54C9805C8D3DC]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>created_at</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[created_at]</local-name>
+            <parent-name>[New cash table2.csv]</parent-name>
+            <remote-alias>created_at</remote-alias>
+            <ordinal>4</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+            <object-id>[New cash table2.csv_CAE7F51470DB474592B54C9805C8D3DC]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>updated_at</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[updated_at]</local-name>
+            <parent-name>[New cash table2.csv]</parent-name>
+            <remote-alias>updated_at</remote-alias>
+            <ordinal>5</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+            <object-id>[New cash table2.csv_CAE7F51470DB474592B54C9805C8D3DC]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>user_id</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[user_id]</local-name>
+            <parent-name>[New cash table2.csv]</parent-name>
+            <remote-alias>user_id</remote-alias>
+            <ordinal>6</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[New cash table2.csv_CAE7F51470DB474592B54C9805C8D3DC]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>moderated_at</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[moderated_at]</local-name>
+            <parent-name>[New cash table2.csv]</parent-name>
+            <remote-alias>moderated_at</remote-alias>
+            <ordinal>7</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+            <object-id>[New cash table2.csv_CAE7F51470DB474592B54C9805C8D3DC]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>deleted_account_id</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[deleted_account_id]</local-name>
+            <parent-name>[New cash table2.csv]</parent-name>
+            <remote-alias>deleted_account_id</remote-alias>
+            <ordinal>8</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[New cash table2.csv_CAE7F51470DB474592B54C9805C8D3DC]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>reimbursement_date</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[reimbursement_date]</local-name>
+            <parent-name>[New cash table2.csv]</parent-name>
+            <remote-alias>reimbursement_date</remote-alias>
+            <ordinal>9</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+            <object-id>[New cash table2.csv_CAE7F51470DB474592B54C9805C8D3DC]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>cash_request_received_date</remote-name>
+            <remote-type>133</remote-type>
+            <local-name>[cash_request_received_date]</local-name>
+            <parent-name>[New cash table2.csv]</parent-name>
+            <remote-alias>cash_request_received_date</remote-alias>
+            <ordinal>10</ordinal>
+            <local-type>date</local-type>
+            <aggregation>Year</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[New cash table2.csv_CAE7F51470DB474592B54C9805C8D3DC]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>money_back_date</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[money_back_date]</local-name>
+            <parent-name>[New cash table2.csv]</parent-name>
+            <remote-alias>money_back_date</remote-alias>
+            <ordinal>11</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+            <object-id>[New cash table2.csv_CAE7F51470DB474592B54C9805C8D3DC]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>transfer_type</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[transfer_type]</local-name>
+            <parent-name>[New cash table2.csv]</parent-name>
+            <remote-alias>transfer_type</remote-alias>
+            <ordinal>12</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+            <object-id>[New cash table2.csv_CAE7F51470DB474592B54C9805C8D3DC]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>send_at</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[send_at]</local-name>
+            <parent-name>[New cash table2.csv]</parent-name>
+            <remote-alias>send_at</remote-alias>
+            <ordinal>13</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+            <object-id>[New cash table2.csv_CAE7F51470DB474592B54C9805C8D3DC]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>recovery_status</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[recovery_status]</local-name>
+            <parent-name>[New cash table2.csv]</parent-name>
+            <remote-alias>recovery_status</remote-alias>
+            <ordinal>14</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+            <object-id>[New cash table2.csv_CAE7F51470DB474592B54C9805C8D3DC]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>reco_creation</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[reco_creation]</local-name>
+            <parent-name>[New cash table2.csv]</parent-name>
+            <remote-alias>reco_creation</remote-alias>
+            <ordinal>15</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+            <object-id>[New cash table2.csv_CAE7F51470DB474592B54C9805C8D3DC]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>reco_last_update</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[reco_last_update]</local-name>
+            <parent-name>[New cash table2.csv]</parent-name>
+            <remote-alias>reco_last_update</remote-alias>
+            <ordinal>16</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+            <object-id>[New cash table2.csv_CAE7F51470DB474592B54C9805C8D3DC]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>identifier</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[identifier]</local-name>
+            <parent-name>[New cash table2.csv]</parent-name>
+            <remote-alias>identifier</remote-alias>
+            <ordinal>17</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[New cash table2.csv_CAE7F51470DB474592B54C9805C8D3DC]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>first_cash_request</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[first_cash_request]</local-name>
+            <parent-name>[New cash table2.csv]</parent-name>
+            <remote-alias>first_cash_request</remote-alias>
+            <ordinal>18</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+            <object-id>[New cash table2.csv_CAE7F51470DB474592B54C9805C8D3DC]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>cohort</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[cohort]</local-name>
+            <parent-name>[New cash table2.csv]</parent-name>
+            <remote-alias>cohort</remote-alias>
+            <ordinal>19</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+            <object-id>[New cash table2.csv_CAE7F51470DB474592B54C9805C8D3DC]</object-id>
+          </metadata-record>
+        </metadata-records>
+      </connection>
+      <aliases enabled='yes' />
+      <column caption='New cash table2.csv' datatype='table' name='[__tableau_internal_object_id__].[New cash table2.csv_CAE7F51470DB474592B54C9805C8D3DC]' role='measure' type='quantitative' />
+      <column caption='Amount' datatype='real' name='[amount]' role='measure' type='quantitative' />
+      <column caption='Cash Request Received Date' datatype='date' name='[cash_request_received_date]' role='dimension' type='ordinal' />
+      <column caption='Cohort' datatype='string' name='[cohort]' role='dimension' type='nominal' />
+      <column caption='Created At' datatype='string' name='[created_at]' role='dimension' type='nominal' />
+      <column caption='Deleted Account Id' datatype='real' name='[deleted_account_id]' role='dimension' type='ordinal' />
+      <column caption='First Cash Request' datatype='string' name='[first_cash_request]' role='dimension' type='nominal' />
+      <column caption='Id' datatype='integer' name='[id]' role='dimension' type='ordinal' />
+      <column caption='Identifier' datatype='real' name='[identifier]' role='measure' type='quantitative' />
+      <column caption='Moderated At' datatype='string' name='[moderated_at]' role='dimension' type='nominal' />
+      <column caption='Money Back Date' datatype='string' name='[money_back_date]' role='dimension' type='nominal' />
+      <column caption='Reco Creation' datatype='string' name='[reco_creation]' role='dimension' type='nominal' />
+      <column caption='Reco Last Update' datatype='string' name='[reco_last_update]' role='dimension' type='nominal' />
+      <column caption='Recovery Status' datatype='string' name='[recovery_status]' role='dimension' type='nominal' />
+      <column caption='Reimbursement Date' datatype='string' name='[reimbursement_date]' role='dimension' type='nominal' />
+      <column caption='Send At' datatype='string' name='[send_at]' role='dimension' type='nominal' />
+      <column caption='Status' datatype='string' name='[status]' role='dimension' type='nominal' />
+      <column caption='Transfer Type' datatype='string' name='[transfer_type]' role='dimension' type='nominal' />
+      <column caption='Updated At' datatype='string' name='[updated_at]' role='dimension' type='nominal' />
+      <column caption='User Id' datatype='real' name='[user_id]' role='dimension' type='ordinal' />
+      <extract _.fcp.VConnDownstreamExtractsWithWarnings.true...user-specific='false' count='-1' enabled='true' object-id='' units='records'>
+        <connection access_mode='readonly' author-locale='en_US' class='hyper' dbname='C:/Users/Natanael/AppData/Local/Temp/TableauTemp/#TableauTemp_05oo8ju0todjdo190mnd61dc62qn.hyper' default-settings='hyper' schema='Extract' sslmode='' tablename='Extract' update-time='12/13/2024 01:21:44 AM' username='tableau_internal_user'>
+          <relation name='Extract' table='[Extract].[Extract]' type='table' />
+          <metadata-records>
+            <metadata-record class='column'>
+              <remote-name>F1</remote-name>
+              <remote-type>20</remote-type>
+              <local-name>[F1]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>F1</remote-alias>
+              <ordinal>0</ordinal>
+              <family>New cash table2.csv</family>
+              <local-type>integer</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>23970</approx-count>
+              <contains-null>true</contains-null>
+              <object-id>[New cash table2.csv_CAE7F51470DB474592B54C9805C8D3DC]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>id</remote-name>
+              <remote-type>20</remote-type>
+              <local-name>[id]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>id</remote-alias>
+              <ordinal>1</ordinal>
+              <family>New cash table2.csv</family>
+              <local-type>integer</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>23970</approx-count>
+              <contains-null>true</contains-null>
+              <object-id>[New cash table2.csv_CAE7F51470DB474592B54C9805C8D3DC]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>amount</remote-name>
+              <remote-type>5</remote-type>
+              <local-name>[amount]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>amount</remote-alias>
+              <ordinal>2</ordinal>
+              <family>New cash table2.csv</family>
+              <local-type>real</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>48</approx-count>
+              <contains-null>true</contains-null>
+              <object-id>[New cash table2.csv_CAE7F51470DB474592B54C9805C8D3DC]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>status</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[status]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>status</remote-alias>
+              <ordinal>3</ordinal>
+              <family>New cash table2.csv</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>11</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='0' name='LEN_RUS' />
+              <object-id>[New cash table2.csv_CAE7F51470DB474592B54C9805C8D3DC]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>created_at</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[created_at]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>created_at</remote-alias>
+              <ordinal>4</ordinal>
+              <family>New cash table2.csv</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>23970</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='0' name='LEN_RUS' />
+              <object-id>[New cash table2.csv_CAE7F51470DB474592B54C9805C8D3DC]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>updated_at</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[updated_at]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>updated_at</remote-alias>
+              <ordinal>5</ordinal>
+              <family>New cash table2.csv</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>23970</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='0' name='LEN_RUS' />
+              <object-id>[New cash table2.csv_CAE7F51470DB474592B54C9805C8D3DC]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>user_id</remote-name>
+              <remote-type>5</remote-type>
+              <local-name>[user_id]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>user_id</remote-alias>
+              <ordinal>6</ordinal>
+              <family>New cash table2.csv</family>
+              <local-type>real</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>6843</approx-count>
+              <contains-null>true</contains-null>
+              <object-id>[New cash table2.csv_CAE7F51470DB474592B54C9805C8D3DC]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>moderated_at</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[moderated_at]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>moderated_at</remote-alias>
+              <ordinal>7</ordinal>
+              <family>New cash table2.csv</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>18011</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='0' name='LEN_RUS' />
+              <object-id>[New cash table2.csv_CAE7F51470DB474592B54C9805C8D3DC]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>deleted_account_id</remote-name>
+              <remote-type>5</remote-type>
+              <local-name>[deleted_account_id]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>deleted_account_id</remote-alias>
+              <ordinal>8</ordinal>
+              <family>New cash table2.csv</family>
+              <local-type>real</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>1105</approx-count>
+              <contains-null>true</contains-null>
+              <object-id>[New cash table2.csv_CAE7F51470DB474592B54C9805C8D3DC]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>reimbursement_date</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[reimbursement_date]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>reimbursement_date</remote-alias>
+              <ordinal>9</ordinal>
+              <family>New cash table2.csv</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>1568</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='0' name='LEN_RUS' />
+              <object-id>[New cash table2.csv_CAE7F51470DB474592B54C9805C8D3DC]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>cash_request_received_date</remote-name>
+              <remote-type>133</remote-type>
+              <local-name>[cash_request_received_date]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>cash_request_received_date</remote-alias>
+              <ordinal>10</ordinal>
+              <family>New cash table2.csv</family>
+              <local-type>date</local-type>
+              <aggregation>Year</aggregation>
+              <approx-count>426</approx-count>
+              <contains-null>true</contains-null>
+              <object-id>[New cash table2.csv_CAE7F51470DB474592B54C9805C8D3DC]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>money_back_date</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[money_back_date]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>money_back_date</remote-alias>
+              <ordinal>11</ordinal>
+              <family>New cash table2.csv</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>4801</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='0' name='LEN_RUS' />
+              <object-id>[New cash table2.csv_CAE7F51470DB474592B54C9805C8D3DC]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>transfer_type</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[transfer_type]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>transfer_type</remote-alias>
+              <ordinal>12</ordinal>
+              <family>New cash table2.csv</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>2</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='0' name='LEN_RUS' />
+              <object-id>[New cash table2.csv_CAE7F51470DB474592B54C9805C8D3DC]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>send_at</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[send_at]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>send_at</remote-alias>
+              <ordinal>13</ordinal>
+              <family>New cash table2.csv</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>18875</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='0' name='LEN_RUS' />
+              <object-id>[New cash table2.csv_CAE7F51470DB474592B54C9805C8D3DC]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>recovery_status</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[recovery_status]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>recovery_status</remote-alias>
+              <ordinal>14</ordinal>
+              <family>New cash table2.csv</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>3</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='0' name='LEN_RUS' />
+              <object-id>[New cash table2.csv_CAE7F51470DB474592B54C9805C8D3DC]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>reco_creation</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[reco_creation]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>reco_creation</remote-alias>
+              <ordinal>15</ordinal>
+              <family>New cash table2.csv</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>5977</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='0' name='LEN_RUS' />
+              <object-id>[New cash table2.csv_CAE7F51470DB474592B54C9805C8D3DC]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>reco_last_update</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[reco_last_update]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>reco_last_update</remote-alias>
+              <ordinal>16</ordinal>
+              <family>New cash table2.csv</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>5977</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='0' name='LEN_RUS' />
+              <object-id>[New cash table2.csv_CAE7F51470DB474592B54C9805C8D3DC]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>identifier</remote-name>
+              <remote-type>5</remote-type>
+              <local-name>[identifier]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>identifier</remote-alias>
+              <ordinal>17</ordinal>
+              <family>New cash table2.csv</family>
+              <local-type>real</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>7295</approx-count>
+              <contains-null>true</contains-null>
+              <object-id>[New cash table2.csv_CAE7F51470DB474592B54C9805C8D3DC]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>first_cash_request</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[first_cash_request]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>first_cash_request</remote-alias>
+              <ordinal>18</ordinal>
+              <family>New cash table2.csv</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>16</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='0' name='LEN_RUS' />
+              <object-id>[New cash table2.csv_CAE7F51470DB474592B54C9805C8D3DC]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>cohort</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[cohort]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>cohort</remote-alias>
+              <ordinal>19</ordinal>
+              <family>New cash table2.csv</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>16</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='0' name='LEN_RUS' />
+              <object-id>[New cash table2.csv_CAE7F51470DB474592B54C9805C8D3DC]</object-id>
+            </metadata-record>
+          </metadata-records>
+        </connection>
+      </extract>
+      <layout dim-ordering='alphabetic' measure-ordering='alphabetic' show-structure='true' />
+      <semantic-values>
+        <semantic-value key='[Country].[Name]' value='&quot;United States&quot;' />
+      </semantic-values>
+      <object-graph>
+        <objects>
+          <object caption='New cash table2.csv' id='New cash table2.csv_CAE7F51470DB474592B54C9805C8D3DC'>
+            <properties context=''>
+              <relation connection='textscan.168h0od044msma10xebkv030e834' name='New cash table2.csv' table='[New cash table2#csv]' type='table'>
+                <columns character-set='UTF-8' header='yes' locale='en_US' separator=','>
+                  <column datatype='integer' name='F1' ordinal='0' />
+                  <column datatype='integer' name='id' ordinal='1' />
+                  <column datatype='real' name='amount' ordinal='2' />
+                  <column datatype='string' name='status' ordinal='3' />
+                  <column datatype='string' name='created_at' ordinal='4' />
+                  <column datatype='string' name='updated_at' ordinal='5' />
+                  <column datatype='real' name='user_id' ordinal='6' />
+                  <column datatype='string' name='moderated_at' ordinal='7' />
+                  <column datatype='real' name='deleted_account_id' ordinal='8' />
+                  <column datatype='string' name='reimbursement_date' ordinal='9' />
+                  <column datatype='date' name='cash_request_received_date' ordinal='10' />
+                  <column datatype='string' name='money_back_date' ordinal='11' />
+                  <column datatype='string' name='transfer_type' ordinal='12' />
+                  <column datatype='string' name='send_at' ordinal='13' />
+                  <column datatype='string' name='recovery_status' ordinal='14' />
+                  <column datatype='string' name='reco_creation' ordinal='15' />
+                  <column datatype='string' name='reco_last_update' ordinal='16' />
+                  <column datatype='real' name='identifier' ordinal='17' />
+                  <column datatype='string' name='first_cash_request' ordinal='18' />
+                  <column datatype='string' name='cohort' ordinal='19' />
+                </columns>
+              </relation>
+            </properties>
+            <properties context='extract'>
+              <relation name='Extract' table='[Extract].[Extract]' type='table' />
+            </properties>
+          </object>
+        </objects>
+      </object-graph>
+    </datasource>
+    <datasource caption='New table merged2' inline='true' name='federated.1tu2nf71a0m66u18igspf1fp4vuc' version='18.1'>
+      <connection class='federated'>
+        <named-connections>
+          <named-connection caption='New table merged2' name='textscan.1iv0xkb0tfzi6s1b1skgn083gz5n'>
+            <connection class='textscan' directory='C:/Users/Natanael/Documents/Ironhack/week 2/project-1-ironhack-payments' filename='New table merged2.csv' password='' server='' />
+          </named-connection>
+        </named-connections>
+        <relation connection='textscan.1iv0xkb0tfzi6s1b1skgn083gz5n' name='New table merged2.csv' table='[New table merged2#csv]' type='table'>
+          <columns character-set='UTF-8' header='yes' locale='en_US' separator=','>
+            <column datatype='integer' name='F1' ordinal='0' />
+            <column datatype='integer' name='id_x' ordinal='1' />
+            <column datatype='real' name='cash_request_id' ordinal='2' />
+            <column datatype='string' name='type' ordinal='3' />
+            <column datatype='string' name='status_x' ordinal='4' />
+            <column datatype='string' name='category' ordinal='5' />
+            <column datatype='real' name='total_amount' ordinal='6' />
+            <column datatype='string' name='reason' ordinal='7' />
+            <column datatype='datetime' date-parse-format='yyyy-MM-dd HH:mm:ss.SSSSSSZZZZZ' name='created_at_x' ordinal='8' />
+            <column datatype='datetime' date-parse-format='yyyy-MM-dd HH:mm:ss.SSSSSSZZZZZ' name='updated_at_x' ordinal='9' />
+            <column datatype='datetime' date-parse-format='yyyy-MM-dd HH:mm:ss.SSSSSSZZZZZ' name='paid_at' ordinal='10' />
+            <column datatype='datetime' date-parse-format='yyyy-MM-dd HH:mm:ss.SSSSSSZZZZZ|#|#|yyyy-MM-dd HH:mm:ssZZZZZ' name='from_date' ordinal='11' />
+            <column datatype='datetime' date-parse-format='yyyy-MM-dd HH:mm:ss.SSSSSSZZZZZ|#|#|yyyy-MM-dd HH:mm:ssZZZZZ' name='to_date' ordinal='12' />
+            <column datatype='string' name='charge_moment' ordinal='13' />
+            <column datatype='integer' name='id_y' ordinal='14' />
+            <column datatype='real' name='amount' ordinal='15' />
+            <column datatype='string' name='status_y' ordinal='16' />
+            <column datatype='datetime' date-parse-format='yyyy-MM-dd HH:mm:ss.SSSSSSZZZZZ' name='created_at_y' ordinal='17' />
+            <column datatype='datetime' date-parse-format='yyyy-MM-dd HH:mm:ss.SSSSSSZZZZZ' name='updated_at_y' ordinal='18' />
+            <column datatype='real' name='user_id' ordinal='19' />
+            <column datatype='datetime' date-parse-format='yyyy-MM-dd HH:mm:ss.SSSSSSZZZZZ' name='moderated_at' ordinal='20' />
+            <column datatype='real' name='deleted_account_id' ordinal='21' />
+            <column datatype='datetime' date-parse-format='yyyy-MM-dd HH:mm:ss.SSSSSSZZZZZ|#|#|yyyy-MM-dd HH:mm:ssZZZZZ' name='reimbursement_date' ordinal='22' />
+            <column datatype='date' name='cash_request_received_date' ordinal='23' />
+            <column datatype='datetime' date-parse-format='yyyy-MM-dd HH:mm:ss.SSSSSSZZZZZ' name='money_back_date' ordinal='24' />
+            <column datatype='string' name='transfer_type' ordinal='25' />
+            <column datatype='datetime' date-parse-format='yyyy-MM-dd HH:mm:ss.SSSSSSZZZZZ' name='send_at' ordinal='26' />
+            <column datatype='string' name='recovery_status' ordinal='27' />
+            <column datatype='datetime' date-parse-format='yyyy-MM-dd HH:mm:ss.SSSSSSZZZZZ' name='reco_creation' ordinal='28' />
+            <column datatype='datetime' date-parse-format='yyyy-MM-dd HH:mm:ss.SSSSSSZZZZZ' name='reco_last_update' ordinal='29' />
+            <column datatype='real' name='identifier' ordinal='30' />
+            <column datatype='date' date-parse-format='yyyy-MM' name='first_cash_request' ordinal='31' />
+            <column datatype='string' name='cohort' ordinal='32' />
+          </columns>
+        </relation>
+        <metadata-records>
+          <metadata-record class='capability'>
+            <remote-name />
+            <remote-type>0</remote-type>
+            <parent-name>[New table merged2.csv]</parent-name>
+            <remote-alias />
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='character-set'>&quot;UTF-8&quot;</attribute>
+              <attribute datatype='string' name='collation'>&quot;en_US&quot;</attribute>
+              <attribute datatype='string' name='field-delimiter'>&quot;,&quot;</attribute>
+              <attribute datatype='string' name='header-row'>&quot;true&quot;</attribute>
+              <attribute datatype='string' name='locale'>&quot;en_US&quot;</attribute>
+              <attribute datatype='string' name='single-char'>&quot;&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>F1</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[F1]</local-name>
+            <parent-name>[New table merged2.csv]</parent-name>
+            <remote-alias>F1</remote-alias>
+            <ordinal>0</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[New table merged2.csv_4E5B7E52E5A24F80B97A70CD5F1861EB]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>id_x</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[id_x]</local-name>
+            <parent-name>[New table merged2.csv]</parent-name>
+            <remote-alias>id_x</remote-alias>
+            <ordinal>1</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[New table merged2.csv_4E5B7E52E5A24F80B97A70CD5F1861EB]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>cash_request_id</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[cash_request_id]</local-name>
+            <parent-name>[New table merged2.csv]</parent-name>
+            <remote-alias>cash_request_id</remote-alias>
+            <ordinal>2</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[New table merged2.csv_4E5B7E52E5A24F80B97A70CD5F1861EB]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>type</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[type]</local-name>
+            <parent-name>[New table merged2.csv]</parent-name>
+            <remote-alias>type</remote-alias>
+            <ordinal>3</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+            <object-id>[New table merged2.csv_4E5B7E52E5A24F80B97A70CD5F1861EB]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>status_x</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[status_x]</local-name>
+            <parent-name>[New table merged2.csv]</parent-name>
+            <remote-alias>status_x</remote-alias>
+            <ordinal>4</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+            <object-id>[New table merged2.csv_4E5B7E52E5A24F80B97A70CD5F1861EB]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>category</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[category]</local-name>
+            <parent-name>[New table merged2.csv]</parent-name>
+            <remote-alias>category</remote-alias>
+            <ordinal>5</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+            <object-id>[New table merged2.csv_4E5B7E52E5A24F80B97A70CD5F1861EB]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>total_amount</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[total_amount]</local-name>
+            <parent-name>[New table merged2.csv]</parent-name>
+            <remote-alias>total_amount</remote-alias>
+            <ordinal>6</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[New table merged2.csv_4E5B7E52E5A24F80B97A70CD5F1861EB]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>reason</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[reason]</local-name>
+            <parent-name>[New table merged2.csv]</parent-name>
+            <remote-alias>reason</remote-alias>
+            <ordinal>7</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+            <object-id>[New table merged2.csv_4E5B7E52E5A24F80B97A70CD5F1861EB]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>created_at_x</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[created_at_x]</local-name>
+            <parent-name>[New table merged2.csv]</parent-name>
+            <remote-alias>created_at_x</remote-alias>
+            <ordinal>8</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+            <object-id>[New table merged2.csv_4E5B7E52E5A24F80B97A70CD5F1861EB]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>updated_at_x</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[updated_at_x]</local-name>
+            <parent-name>[New table merged2.csv]</parent-name>
+            <remote-alias>updated_at_x</remote-alias>
+            <ordinal>9</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+            <object-id>[New table merged2.csv_4E5B7E52E5A24F80B97A70CD5F1861EB]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>paid_at</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[paid_at]</local-name>
+            <parent-name>[New table merged2.csv]</parent-name>
+            <remote-alias>paid_at</remote-alias>
+            <ordinal>10</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+            <object-id>[New table merged2.csv_4E5B7E52E5A24F80B97A70CD5F1861EB]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>from_date</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[from_date]</local-name>
+            <parent-name>[New table merged2.csv]</parent-name>
+            <remote-alias>from_date</remote-alias>
+            <ordinal>11</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+            <object-id>[New table merged2.csv_4E5B7E52E5A24F80B97A70CD5F1861EB]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>to_date</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[to_date]</local-name>
+            <parent-name>[New table merged2.csv]</parent-name>
+            <remote-alias>to_date</remote-alias>
+            <ordinal>12</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+            <object-id>[New table merged2.csv_4E5B7E52E5A24F80B97A70CD5F1861EB]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>charge_moment</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[charge_moment]</local-name>
+            <parent-name>[New table merged2.csv]</parent-name>
+            <remote-alias>charge_moment</remote-alias>
+            <ordinal>13</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+            <object-id>[New table merged2.csv_4E5B7E52E5A24F80B97A70CD5F1861EB]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>id_y</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[id_y]</local-name>
+            <parent-name>[New table merged2.csv]</parent-name>
+            <remote-alias>id_y</remote-alias>
+            <ordinal>14</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[New table merged2.csv_4E5B7E52E5A24F80B97A70CD5F1861EB]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>amount</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[amount]</local-name>
+            <parent-name>[New table merged2.csv]</parent-name>
+            <remote-alias>amount</remote-alias>
+            <ordinal>15</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[New table merged2.csv_4E5B7E52E5A24F80B97A70CD5F1861EB]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>status_y</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[status_y]</local-name>
+            <parent-name>[New table merged2.csv]</parent-name>
+            <remote-alias>status_y</remote-alias>
+            <ordinal>16</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+            <object-id>[New table merged2.csv_4E5B7E52E5A24F80B97A70CD5F1861EB]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>created_at_y</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[created_at_y]</local-name>
+            <parent-name>[New table merged2.csv]</parent-name>
+            <remote-alias>created_at_y</remote-alias>
+            <ordinal>17</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+            <object-id>[New table merged2.csv_4E5B7E52E5A24F80B97A70CD5F1861EB]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>updated_at_y</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[updated_at_y]</local-name>
+            <parent-name>[New table merged2.csv]</parent-name>
+            <remote-alias>updated_at_y</remote-alias>
+            <ordinal>18</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+            <object-id>[New table merged2.csv_4E5B7E52E5A24F80B97A70CD5F1861EB]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>user_id</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[user_id]</local-name>
+            <parent-name>[New table merged2.csv]</parent-name>
+            <remote-alias>user_id</remote-alias>
+            <ordinal>19</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[New table merged2.csv_4E5B7E52E5A24F80B97A70CD5F1861EB]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>moderated_at</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[moderated_at]</local-name>
+            <parent-name>[New table merged2.csv]</parent-name>
+            <remote-alias>moderated_at</remote-alias>
+            <ordinal>20</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+            <object-id>[New table merged2.csv_4E5B7E52E5A24F80B97A70CD5F1861EB]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>deleted_account_id</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[deleted_account_id]</local-name>
+            <parent-name>[New table merged2.csv]</parent-name>
+            <remote-alias>deleted_account_id</remote-alias>
+            <ordinal>21</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[New table merged2.csv_4E5B7E52E5A24F80B97A70CD5F1861EB]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>reimbursement_date</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[reimbursement_date]</local-name>
+            <parent-name>[New table merged2.csv]</parent-name>
+            <remote-alias>reimbursement_date</remote-alias>
+            <ordinal>22</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+            <object-id>[New table merged2.csv_4E5B7E52E5A24F80B97A70CD5F1861EB]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>cash_request_received_date</remote-name>
+            <remote-type>133</remote-type>
+            <local-name>[cash_request_received_date]</local-name>
+            <parent-name>[New table merged2.csv]</parent-name>
+            <remote-alias>cash_request_received_date</remote-alias>
+            <ordinal>23</ordinal>
+            <local-type>date</local-type>
+            <aggregation>Year</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[New table merged2.csv_4E5B7E52E5A24F80B97A70CD5F1861EB]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>money_back_date</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[money_back_date]</local-name>
+            <parent-name>[New table merged2.csv]</parent-name>
+            <remote-alias>money_back_date</remote-alias>
+            <ordinal>24</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+            <object-id>[New table merged2.csv_4E5B7E52E5A24F80B97A70CD5F1861EB]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>transfer_type</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[transfer_type]</local-name>
+            <parent-name>[New table merged2.csv]</parent-name>
+            <remote-alias>transfer_type</remote-alias>
+            <ordinal>25</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+            <object-id>[New table merged2.csv_4E5B7E52E5A24F80B97A70CD5F1861EB]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>send_at</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[send_at]</local-name>
+            <parent-name>[New table merged2.csv]</parent-name>
+            <remote-alias>send_at</remote-alias>
+            <ordinal>26</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+            <object-id>[New table merged2.csv_4E5B7E52E5A24F80B97A70CD5F1861EB]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>recovery_status</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[recovery_status]</local-name>
+            <parent-name>[New table merged2.csv]</parent-name>
+            <remote-alias>recovery_status</remote-alias>
+            <ordinal>27</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+            <object-id>[New table merged2.csv_4E5B7E52E5A24F80B97A70CD5F1861EB]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>reco_creation</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[reco_creation]</local-name>
+            <parent-name>[New table merged2.csv]</parent-name>
+            <remote-alias>reco_creation</remote-alias>
+            <ordinal>28</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+            <object-id>[New table merged2.csv_4E5B7E52E5A24F80B97A70CD5F1861EB]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>reco_last_update</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[reco_last_update]</local-name>
+            <parent-name>[New table merged2.csv]</parent-name>
+            <remote-alias>reco_last_update</remote-alias>
+            <ordinal>29</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+            <object-id>[New table merged2.csv_4E5B7E52E5A24F80B97A70CD5F1861EB]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>identifier</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[identifier]</local-name>
+            <parent-name>[New table merged2.csv]</parent-name>
+            <remote-alias>identifier</remote-alias>
+            <ordinal>30</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[New table merged2.csv_4E5B7E52E5A24F80B97A70CD5F1861EB]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>first_cash_request</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[first_cash_request]</local-name>
+            <parent-name>[New table merged2.csv]</parent-name>
+            <remote-alias>first_cash_request</remote-alias>
+            <ordinal>31</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+            <object-id>[New table merged2.csv_4E5B7E52E5A24F80B97A70CD5F1861EB]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>cohort</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[cohort]</local-name>
+            <parent-name>[New table merged2.csv]</parent-name>
+            <remote-alias>cohort</remote-alias>
+            <ordinal>32</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+            <object-id>[New table merged2.csv_4E5B7E52E5A24F80B97A70CD5F1861EB]</object-id>
+          </metadata-record>
+        </metadata-records>
+      </connection>
+      <aliases enabled='yes' />
+      <column caption='New table merged2.csv' datatype='table' name='[__tableau_internal_object_id__].[New table merged2.csv_4E5B7E52E5A24F80B97A70CD5F1861EB]' role='measure' type='quantitative' />
+      <column caption='Amount' datatype='real' name='[amount]' role='measure' type='quantitative' />
+      <column caption='Cash Request Id' datatype='real' name='[cash_request_id]' role='dimension' type='ordinal' />
+      <column caption='Cash Request Received Date' datatype='date' name='[cash_request_received_date]' role='dimension' type='ordinal' />
+      <column caption='Category' datatype='string' name='[category]' role='dimension' type='nominal' />
+      <column caption='Charge Moment' datatype='string' name='[charge_moment]' role='dimension' type='nominal' />
+      <column caption='Cohort' datatype='string' name='[cohort]' role='dimension' type='nominal' />
+      <column aggregation='Count' caption='Created At X' datatype='datetime' datatype-customized='true' name='[created_at_x]' role='dimension' type='ordinal' />
+      <column aggregation='Count' caption='Created At Y' datatype='datetime' datatype-customized='true' name='[created_at_y]' role='dimension' type='ordinal' />
+      <column caption='Deleted Account Id' datatype='real' name='[deleted_account_id]' role='dimension' type='ordinal' />
+      <column aggregation='Count' caption='First Cash Request' datatype='date' datatype-customized='true' name='[first_cash_request]' role='dimension' type='ordinal' />
+      <column aggregation='Count' caption='From Date' datatype='datetime' datatype-customized='true' name='[from_date]' role='dimension' type='ordinal' />
+      <column caption='Id X' datatype='integer' name='[id_x]' role='dimension' type='ordinal' />
+      <column caption='Id Y' datatype='integer' name='[id_y]' role='dimension' type='ordinal' />
+      <column caption='Identifier' datatype='real' name='[identifier]' role='measure' type='quantitative' />
+      <column aggregation='Count' caption='Moderated At' datatype='datetime' datatype-customized='true' name='[moderated_at]' role='dimension' type='ordinal' />
+      <column aggregation='Count' caption='Money Back Date' datatype='datetime' datatype-customized='true' name='[money_back_date]' role='dimension' type='ordinal' />
+      <column aggregation='Count' caption='Paid At' datatype='datetime' datatype-customized='true' name='[paid_at]' role='dimension' type='ordinal' />
+      <column caption='Reason' datatype='string' name='[reason]' role='dimension' type='nominal' />
+      <column aggregation='Count' caption='Reco Creation' datatype='datetime' datatype-customized='true' name='[reco_creation]' role='dimension' type='ordinal' />
+      <column aggregation='Count' caption='Reco Last Update' datatype='datetime' datatype-customized='true' name='[reco_last_update]' role='dimension' type='ordinal' />
+      <column caption='Recovery Status' datatype='string' name='[recovery_status]' role='dimension' type='nominal' />
+      <column aggregation='Count' caption='Reimbursement Date' datatype='datetime' datatype-customized='true' name='[reimbursement_date]' role='dimension' type='ordinal' />
+      <column aggregation='Count' caption='Send At' datatype='datetime' datatype-customized='true' name='[send_at]' role='dimension' type='ordinal' />
+      <column caption='Status X' datatype='string' name='[status_x]' role='dimension' type='nominal' />
+      <column caption='Status Y' datatype='string' name='[status_y]' role='dimension' type='nominal' />
+      <column aggregation='Count' caption='To Date' datatype='datetime' datatype-customized='true' name='[to_date]' role='dimension' type='ordinal' />
+      <column caption='Total Amount' datatype='real' name='[total_amount]' role='measure' type='quantitative' />
+      <column caption='Transfer Type' datatype='string' name='[transfer_type]' role='dimension' type='nominal' />
+      <column caption='Type' datatype='string' name='[type]' role='dimension' type='nominal' />
+      <column aggregation='Count' caption='Updated At X' datatype='datetime' datatype-customized='true' name='[updated_at_x]' role='dimension' type='ordinal' />
+      <column aggregation='Count' caption='Updated At Y' datatype='datetime' datatype-customized='true' name='[updated_at_y]' role='dimension' type='ordinal' />
+      <column caption='User Id' datatype='real' name='[user_id]' role='dimension' type='ordinal' />
+      <extract _.fcp.VConnDownstreamExtractsWithWarnings.true...user-specific='false' count='-1' enabled='true' object-id='' units='records'>
+        <connection access_mode='readonly' author-locale='en_US' class='hyper' dbname='C:/Users/Natanael/AppData/Local/Temp/TableauTemp/#TableauTemp_00z9vgp0o1twza18n268d0o3ip9l.hyper' default-settings='hyper' schema='Extract' sslmode='' tablename='Extract' update-time='12/13/2024 01:23:13 AM' username='tableau_internal_user'>
+          <relation name='Extract' table='[Extract].[Extract]' type='table'>
+            <columns>
+              <column datatype='datetime' date-parse-format='yyyy-MM-dd HH:mm:ss.SSSSSSZZZZZ' name='send_at' />
+              <column datatype='datetime' date-parse-format='yyyy-MM-dd HH:mm:ss.SSSSSSZZZZZ|#|#|yyyy-MM-dd HH:mm:ssZZZZZ' name='to_date' />
+              <column datatype='datetime' date-parse-format='yyyy-MM-dd HH:mm:ss.SSSSSSZZZZZ' name='created_at_x' />
+              <column datatype='datetime' date-parse-format='yyyy-MM-dd HH:mm:ss.SSSSSSZZZZZ' name='created_at_y' />
+              <column datatype='date' date-parse-format='yyyy-MM' name='first_cash_request' />
+              <column datatype='datetime' date-parse-format='yyyy-MM-dd HH:mm:ss.SSSSSSZZZZZ|#|#|yyyy-MM-dd HH:mm:ssZZZZZ' name='from_date' />
+              <column datatype='datetime' date-parse-format='yyyy-MM-dd HH:mm:ss.SSSSSSZZZZZ' name='moderated_at' />
+              <column datatype='datetime' date-parse-format='yyyy-MM-dd HH:mm:ss.SSSSSSZZZZZ' name='money_back_date' />
+              <column datatype='datetime' date-parse-format='yyyy-MM-dd HH:mm:ss.SSSSSSZZZZZ' name='paid_at' />
+              <column datatype='datetime' date-parse-format='yyyy-MM-dd HH:mm:ss.SSSSSSZZZZZ' name='reco_creation' />
+              <column datatype='datetime' date-parse-format='yyyy-MM-dd HH:mm:ss.SSSSSSZZZZZ' name='reco_last_update' />
+              <column datatype='datetime' date-parse-format='yyyy-MM-dd HH:mm:ss.SSSSSSZZZZZ|#|#|yyyy-MM-dd HH:mm:ssZZZZZ' name='reimbursement_date' />
+              <column datatype='datetime' date-parse-format='yyyy-MM-dd HH:mm:ss.SSSSSSZZZZZ' name='updated_at_x' />
+              <column datatype='datetime' date-parse-format='yyyy-MM-dd HH:mm:ss.SSSSSSZZZZZ' name='updated_at_y' />
+            </columns>
+          </relation>
+          <metadata-records>
+            <metadata-record class='column'>
+              <remote-name>F1</remote-name>
+              <remote-type>20</remote-type>
+              <local-name>[F1]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>F1</remote-alias>
+              <ordinal>0</ordinal>
+              <family>New table merged2.csv</family>
+              <local-type>integer</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>21057</approx-count>
+              <contains-null>true</contains-null>
+              <object-id>[New table merged2.csv_4E5B7E52E5A24F80B97A70CD5F1861EB]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>id_x</remote-name>
+              <remote-type>20</remote-type>
+              <local-name>[id_x]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>id_x</remote-alias>
+              <ordinal>1</ordinal>
+              <family>New table merged2.csv</family>
+              <local-type>integer</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>21057</approx-count>
+              <contains-null>true</contains-null>
+              <object-id>[New table merged2.csv_4E5B7E52E5A24F80B97A70CD5F1861EB]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>cash_request_id</remote-name>
+              <remote-type>5</remote-type>
+              <local-name>[cash_request_id]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>cash_request_id</remote-alias>
+              <ordinal>2</ordinal>
+              <family>New table merged2.csv</family>
+              <local-type>real</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>8314</approx-count>
+              <contains-null>true</contains-null>
+              <object-id>[New table merged2.csv_4E5B7E52E5A24F80B97A70CD5F1861EB]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>type</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[type]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>type</remote-alias>
+              <ordinal>3</ordinal>
+              <family>New table merged2.csv</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>3</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='0' name='LEN_RUS' />
+              <object-id>[New table merged2.csv_4E5B7E52E5A24F80B97A70CD5F1861EB]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>status_x</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[status_x]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>status_x</remote-alias>
+              <ordinal>4</ordinal>
+              <family>New table merged2.csv</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>4</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='0' name='LEN_RUS' />
+              <object-id>[New table merged2.csv_4E5B7E52E5A24F80B97A70CD5F1861EB]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>category</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[category]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>category</remote-alias>
+              <ordinal>5</ordinal>
+              <family>New table merged2.csv</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>3</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='0' name='LEN_RUS' />
+              <object-id>[New table merged2.csv_4E5B7E52E5A24F80B97A70CD5F1861EB]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>total_amount</remote-name>
+              <remote-type>5</remote-type>
+              <local-name>[total_amount]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>total_amount</remote-alias>
+              <ordinal>6</ordinal>
+              <family>New table merged2.csv</family>
+              <local-type>real</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>1</approx-count>
+              <contains-null>true</contains-null>
+              <object-id>[New table merged2.csv_4E5B7E52E5A24F80B97A70CD5F1861EB]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>reason</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[reason]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>reason</remote-alias>
+              <ordinal>7</ordinal>
+              <family>New table merged2.csv</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>9383</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='0' name='LEN_RUS' />
+              <object-id>[New table merged2.csv_4E5B7E52E5A24F80B97A70CD5F1861EB]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>created_at_x</remote-name>
+              <remote-type>7</remote-type>
+              <local-name>[created_at_x]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>created_at_x</remote-alias>
+              <ordinal>8</ordinal>
+              <family>New table merged2.csv</family>
+              <local-type>datetime</local-type>
+              <aggregation>Year</aggregation>
+              <contains-null>true</contains-null>
+              <collation flag='0' name='LEN_RUS' />
+              <object-id>[New table merged2.csv_4E5B7E52E5A24F80B97A70CD5F1861EB]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>updated_at_x</remote-name>
+              <remote-type>7</remote-type>
+              <local-name>[updated_at_x]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>updated_at_x</remote-alias>
+              <ordinal>9</ordinal>
+              <family>New table merged2.csv</family>
+              <local-type>datetime</local-type>
+              <aggregation>Year</aggregation>
+              <contains-null>true</contains-null>
+              <collation flag='0' name='LEN_RUS' />
+              <object-id>[New table merged2.csv_4E5B7E52E5A24F80B97A70CD5F1861EB]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>paid_at</remote-name>
+              <remote-type>7</remote-type>
+              <local-name>[paid_at]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>paid_at</remote-alias>
+              <ordinal>10</ordinal>
+              <family>New table merged2.csv</family>
+              <local-type>datetime</local-type>
+              <aggregation>Year</aggregation>
+              <contains-null>true</contains-null>
+              <collation flag='0' name='LEN_RUS' />
+              <object-id>[New table merged2.csv_4E5B7E52E5A24F80B97A70CD5F1861EB]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>from_date</remote-name>
+              <remote-type>7</remote-type>
+              <local-name>[from_date]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>from_date</remote-alias>
+              <ordinal>11</ordinal>
+              <family>New table merged2.csv</family>
+              <local-type>datetime</local-type>
+              <aggregation>Year</aggregation>
+              <contains-null>true</contains-null>
+              <collation flag='0' name='LEN_RUS' />
+              <object-id>[New table merged2.csv_4E5B7E52E5A24F80B97A70CD5F1861EB]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>to_date</remote-name>
+              <remote-type>7</remote-type>
+              <local-name>[to_date]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>to_date</remote-alias>
+              <ordinal>12</ordinal>
+              <family>New table merged2.csv</family>
+              <local-type>datetime</local-type>
+              <aggregation>Year</aggregation>
+              <contains-null>true</contains-null>
+              <collation flag='0' name='LEN_RUS' />
+              <object-id>[New table merged2.csv_4E5B7E52E5A24F80B97A70CD5F1861EB]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>charge_moment</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[charge_moment]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>charge_moment</remote-alias>
+              <ordinal>13</ordinal>
+              <family>New table merged2.csv</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>2</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='0' name='LEN_RUS' />
+              <object-id>[New table merged2.csv_4E5B7E52E5A24F80B97A70CD5F1861EB]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>id_y</remote-name>
+              <remote-type>20</remote-type>
+              <local-name>[id_y]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>id_y</remote-alias>
+              <ordinal>14</ordinal>
+              <family>New table merged2.csv</family>
+              <local-type>integer</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>8314</approx-count>
+              <contains-null>true</contains-null>
+              <object-id>[New table merged2.csv_4E5B7E52E5A24F80B97A70CD5F1861EB]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>amount</remote-name>
+              <remote-type>5</remote-type>
+              <local-name>[amount]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>amount</remote-alias>
+              <ordinal>15</ordinal>
+              <family>New table merged2.csv</family>
+              <local-type>real</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>28</approx-count>
+              <contains-null>true</contains-null>
+              <object-id>[New table merged2.csv_4E5B7E52E5A24F80B97A70CD5F1861EB]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>status_y</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[status_y]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>status_y</remote-alias>
+              <ordinal>16</ordinal>
+              <family>New table merged2.csv</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>4</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='0' name='LEN_RUS' />
+              <object-id>[New table merged2.csv_4E5B7E52E5A24F80B97A70CD5F1861EB]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>created_at_y</remote-name>
+              <remote-type>7</remote-type>
+              <local-name>[created_at_y]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>created_at_y</remote-alias>
+              <ordinal>17</ordinal>
+              <family>New table merged2.csv</family>
+              <local-type>datetime</local-type>
+              <aggregation>Year</aggregation>
+              <contains-null>true</contains-null>
+              <collation flag='0' name='LEN_RUS' />
+              <object-id>[New table merged2.csv_4E5B7E52E5A24F80B97A70CD5F1861EB]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>updated_at_y</remote-name>
+              <remote-type>7</remote-type>
+              <local-name>[updated_at_y]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>updated_at_y</remote-alias>
+              <ordinal>18</ordinal>
+              <family>New table merged2.csv</family>
+              <local-type>datetime</local-type>
+              <aggregation>Year</aggregation>
+              <contains-null>true</contains-null>
+              <collation flag='0' name='LEN_RUS' />
+              <object-id>[New table merged2.csv_4E5B7E52E5A24F80B97A70CD5F1861EB]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>user_id</remote-name>
+              <remote-type>5</remote-type>
+              <local-name>[user_id]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>user_id</remote-alias>
+              <ordinal>19</ordinal>
+              <family>New table merged2.csv</family>
+              <local-type>real</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>6171</approx-count>
+              <contains-null>true</contains-null>
+              <object-id>[New table merged2.csv_4E5B7E52E5A24F80B97A70CD5F1861EB]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>moderated_at</remote-name>
+              <remote-type>7</remote-type>
+              <local-name>[moderated_at]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>moderated_at</remote-alias>
+              <ordinal>20</ordinal>
+              <family>New table merged2.csv</family>
+              <local-type>datetime</local-type>
+              <aggregation>Year</aggregation>
+              <contains-null>true</contains-null>
+              <collation flag='0' name='LEN_RUS' />
+              <object-id>[New table merged2.csv_4E5B7E52E5A24F80B97A70CD5F1861EB]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>deleted_account_id</remote-name>
+              <remote-type>5</remote-type>
+              <local-name>[deleted_account_id]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>deleted_account_id</remote-alias>
+              <ordinal>21</ordinal>
+              <family>New table merged2.csv</family>
+              <local-type>real</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>427</approx-count>
+              <contains-null>true</contains-null>
+              <object-id>[New table merged2.csv_4E5B7E52E5A24F80B97A70CD5F1861EB]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>reimbursement_date</remote-name>
+              <remote-type>7</remote-type>
+              <local-name>[reimbursement_date]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>reimbursement_date</remote-alias>
+              <ordinal>22</ordinal>
+              <family>New table merged2.csv</family>
+              <local-type>datetime</local-type>
+              <aggregation>Year</aggregation>
+              <contains-null>true</contains-null>
+              <collation flag='0' name='LEN_RUS' />
+              <object-id>[New table merged2.csv_4E5B7E52E5A24F80B97A70CD5F1861EB]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>cash_request_received_date</remote-name>
+              <remote-type>133</remote-type>
+              <local-name>[cash_request_received_date]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>cash_request_received_date</remote-alias>
+              <ordinal>23</ordinal>
+              <family>New table merged2.csv</family>
+              <local-type>date</local-type>
+              <aggregation>Year</aggregation>
+              <approx-count>215</approx-count>
+              <contains-null>true</contains-null>
+              <object-id>[New table merged2.csv_4E5B7E52E5A24F80B97A70CD5F1861EB]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>money_back_date</remote-name>
+              <remote-type>7</remote-type>
+              <local-name>[money_back_date]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>money_back_date</remote-alias>
+              <ordinal>24</ordinal>
+              <family>New table merged2.csv</family>
+              <local-type>datetime</local-type>
+              <aggregation>Year</aggregation>
+              <contains-null>true</contains-null>
+              <collation flag='0' name='LEN_RUS' />
+              <object-id>[New table merged2.csv_4E5B7E52E5A24F80B97A70CD5F1861EB]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>transfer_type</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[transfer_type]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>transfer_type</remote-alias>
+              <ordinal>25</ordinal>
+              <family>New table merged2.csv</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>2</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='0' name='LEN_RUS' />
+              <object-id>[New table merged2.csv_4E5B7E52E5A24F80B97A70CD5F1861EB]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>send_at</remote-name>
+              <remote-type>7</remote-type>
+              <local-name>[send_at]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>send_at</remote-alias>
+              <ordinal>26</ordinal>
+              <family>New table merged2.csv</family>
+              <local-type>datetime</local-type>
+              <aggregation>Year</aggregation>
+              <contains-null>true</contains-null>
+              <collation flag='0' name='LEN_RUS' />
+              <object-id>[New table merged2.csv_4E5B7E52E5A24F80B97A70CD5F1861EB]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>recovery_status</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[recovery_status]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>recovery_status</remote-alias>
+              <ordinal>27</ordinal>
+              <family>New table merged2.csv</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>4</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='0' name='LEN_RUS' />
+              <object-id>[New table merged2.csv_4E5B7E52E5A24F80B97A70CD5F1861EB]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>reco_creation</remote-name>
+              <remote-type>7</remote-type>
+              <local-name>[reco_creation]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>reco_creation</remote-alias>
+              <ordinal>28</ordinal>
+              <family>New table merged2.csv</family>
+              <local-type>datetime</local-type>
+              <aggregation>Year</aggregation>
+              <contains-null>true</contains-null>
+              <collation flag='0' name='LEN_RUS' />
+              <object-id>[New table merged2.csv_4E5B7E52E5A24F80B97A70CD5F1861EB]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>reco_last_update</remote-name>
+              <remote-type>7</remote-type>
+              <local-name>[reco_last_update]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>reco_last_update</remote-alias>
+              <ordinal>29</ordinal>
+              <family>New table merged2.csv</family>
+              <local-type>datetime</local-type>
+              <aggregation>Year</aggregation>
+              <contains-null>true</contains-null>
+              <collation flag='0' name='LEN_RUS' />
+              <object-id>[New table merged2.csv_4E5B7E52E5A24F80B97A70CD5F1861EB]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>identifier</remote-name>
+              <remote-type>5</remote-type>
+              <local-name>[identifier]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>identifier</remote-alias>
+              <ordinal>30</ordinal>
+              <family>New table merged2.csv</family>
+              <local-type>real</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>6325</approx-count>
+              <contains-null>true</contains-null>
+              <object-id>[New table merged2.csv_4E5B7E52E5A24F80B97A70CD5F1861EB]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>first_cash_request</remote-name>
+              <remote-type>7</remote-type>
+              <local-name>[first_cash_request]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>first_cash_request</remote-alias>
+              <ordinal>31</ordinal>
+              <family>New table merged2.csv</family>
+              <local-type>date</local-type>
+              <aggregation>Year</aggregation>
+              <contains-null>true</contains-null>
+              <collation flag='0' name='LEN_RUS' />
+              <object-id>[New table merged2.csv_4E5B7E52E5A24F80B97A70CD5F1861EB]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>cohort</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[cohort]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>cohort</remote-alias>
+              <ordinal>32</ordinal>
+              <family>New table merged2.csv</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>19</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='0' name='LEN_RUS' />
+              <object-id>[New table merged2.csv_4E5B7E52E5A24F80B97A70CD5F1861EB]</object-id>
+            </metadata-record>
+          </metadata-records>
+        </connection>
+      </extract>
+      <layout dim-ordering='alphabetic' measure-ordering='alphabetic' show-structure='true' />
+      <semantic-values>
+        <semantic-value key='[Country].[Name]' value='&quot;United States&quot;' />
+      </semantic-values>
+      <object-graph>
+        <objects>
+          <object caption='New table merged2.csv' id='New table merged2.csv_4E5B7E52E5A24F80B97A70CD5F1861EB'>
+            <properties context=''>
+              <relation connection='textscan.1iv0xkb0tfzi6s1b1skgn083gz5n' name='New table merged2.csv' table='[New table merged2#csv]' type='table'>
+                <columns character-set='UTF-8' header='yes' locale='en_US' separator=','>
+                  <column datatype='integer' name='F1' ordinal='0' />
+                  <column datatype='integer' name='id_x' ordinal='1' />
+                  <column datatype='real' name='cash_request_id' ordinal='2' />
+                  <column datatype='string' name='type' ordinal='3' />
+                  <column datatype='string' name='status_x' ordinal='4' />
+                  <column datatype='string' name='category' ordinal='5' />
+                  <column datatype='real' name='total_amount' ordinal='6' />
+                  <column datatype='string' name='reason' ordinal='7' />
+                  <column datatype='datetime' date-parse-format='yyyy-MM-dd HH:mm:ss.SSSSSSZZZZZ' name='created_at_x' ordinal='8' />
+                  <column datatype='datetime' date-parse-format='yyyy-MM-dd HH:mm:ss.SSSSSSZZZZZ' name='updated_at_x' ordinal='9' />
+                  <column datatype='datetime' date-parse-format='yyyy-MM-dd HH:mm:ss.SSSSSSZZZZZ' name='paid_at' ordinal='10' />
+                  <column datatype='datetime' date-parse-format='yyyy-MM-dd HH:mm:ss.SSSSSSZZZZZ|#|#|yyyy-MM-dd HH:mm:ssZZZZZ' name='from_date' ordinal='11' />
+                  <column datatype='datetime' date-parse-format='yyyy-MM-dd HH:mm:ss.SSSSSSZZZZZ|#|#|yyyy-MM-dd HH:mm:ssZZZZZ' name='to_date' ordinal='12' />
+                  <column datatype='string' name='charge_moment' ordinal='13' />
+                  <column datatype='integer' name='id_y' ordinal='14' />
+                  <column datatype='real' name='amount' ordinal='15' />
+                  <column datatype='string' name='status_y' ordinal='16' />
+                  <column datatype='datetime' date-parse-format='yyyy-MM-dd HH:mm:ss.SSSSSSZZZZZ' name='created_at_y' ordinal='17' />
+                  <column datatype='datetime' date-parse-format='yyyy-MM-dd HH:mm:ss.SSSSSSZZZZZ' name='updated_at_y' ordinal='18' />
+                  <column datatype='real' name='user_id' ordinal='19' />
+                  <column datatype='datetime' date-parse-format='yyyy-MM-dd HH:mm:ss.SSSSSSZZZZZ' name='moderated_at' ordinal='20' />
+                  <column datatype='real' name='deleted_account_id' ordinal='21' />
+                  <column datatype='datetime' date-parse-format='yyyy-MM-dd HH:mm:ss.SSSSSSZZZZZ|#|#|yyyy-MM-dd HH:mm:ssZZZZZ' name='reimbursement_date' ordinal='22' />
+                  <column datatype='date' name='cash_request_received_date' ordinal='23' />
+                  <column datatype='datetime' date-parse-format='yyyy-MM-dd HH:mm:ss.SSSSSSZZZZZ' name='money_back_date' ordinal='24' />
+                  <column datatype='string' name='transfer_type' ordinal='25' />
+                  <column datatype='datetime' date-parse-format='yyyy-MM-dd HH:mm:ss.SSSSSSZZZZZ' name='send_at' ordinal='26' />
+                  <column datatype='string' name='recovery_status' ordinal='27' />
+                  <column datatype='datetime' date-parse-format='yyyy-MM-dd HH:mm:ss.SSSSSSZZZZZ' name='reco_creation' ordinal='28' />
+                  <column datatype='datetime' date-parse-format='yyyy-MM-dd HH:mm:ss.SSSSSSZZZZZ' name='reco_last_update' ordinal='29' />
+                  <column datatype='real' name='identifier' ordinal='30' />
+                  <column datatype='date' date-parse-format='yyyy-MM' name='first_cash_request' ordinal='31' />
+                  <column datatype='string' name='cohort' ordinal='32' />
+                </columns>
+              </relation>
+            </properties>
+            <properties context='extract'>
+              <relation name='Extract' table='[Extract].[Extract]' type='table'>
+                <columns>
+                  <column datatype='datetime' date-parse-format='yyyy-MM-dd HH:mm:ss.SSSSSSZZZZZ' name='send_at' />
+                  <column datatype='datetime' date-parse-format='yyyy-MM-dd HH:mm:ss.SSSSSSZZZZZ|#|#|yyyy-MM-dd HH:mm:ssZZZZZ' name='to_date' />
+                  <column datatype='datetime' date-parse-format='yyyy-MM-dd HH:mm:ss.SSSSSSZZZZZ' name='created_at_x' />
+                  <column datatype='datetime' date-parse-format='yyyy-MM-dd HH:mm:ss.SSSSSSZZZZZ' name='created_at_y' />
+                  <column datatype='date' date-parse-format='yyyy-MM' name='first_cash_request' />
+                  <column datatype='datetime' date-parse-format='yyyy-MM-dd HH:mm:ss.SSSSSSZZZZZ|#|#|yyyy-MM-dd HH:mm:ssZZZZZ' name='from_date' />
+                  <column datatype='datetime' date-parse-format='yyyy-MM-dd HH:mm:ss.SSSSSSZZZZZ' name='moderated_at' />
+                  <column datatype='datetime' date-parse-format='yyyy-MM-dd HH:mm:ss.SSSSSSZZZZZ' name='money_back_date' />
+                  <column datatype='datetime' date-parse-format='yyyy-MM-dd HH:mm:ss.SSSSSSZZZZZ' name='paid_at' />
+                  <column datatype='datetime' date-parse-format='yyyy-MM-dd HH:mm:ss.SSSSSSZZZZZ' name='reco_creation' />
+                  <column datatype='datetime' date-parse-format='yyyy-MM-dd HH:mm:ss.SSSSSSZZZZZ' name='reco_last_update' />
+                  <column datatype='datetime' date-parse-format='yyyy-MM-dd HH:mm:ss.SSSSSSZZZZZ|#|#|yyyy-MM-dd HH:mm:ssZZZZZ' name='reimbursement_date' />
+                  <column datatype='datetime' date-parse-format='yyyy-MM-dd HH:mm:ss.SSSSSSZZZZZ' name='updated_at_x' />
+                  <column datatype='datetime' date-parse-format='yyyy-MM-dd HH:mm:ss.SSSSSSZZZZZ' name='updated_at_y' />
+                </columns>
+              </relation>
+            </properties>
+          </object>
+        </objects>
+      </object-graph>
+    </datasource>
+  </datasources>
+  <worksheets>
+    <worksheet name='Sheet 1'>
+      <layout-options>
+        <title>
+          <formatted-text>
+            <run>Total fees by cohort</run>
+          </formatted-text>
+        </title>
+      </layout-options>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='New table merged2' name='federated.1tu2nf71a0m66u18igspf1fp4vuc' />
+          </datasources>
+          <datasource-dependencies datasource='federated.1tu2nf71a0m66u18igspf1fp4vuc'>
+            <column caption='Cohort' datatype='string' name='[cohort]' role='dimension' type='nominal' />
+            <column-instance column='[cohort]' derivation='None' name='[none:cohort:nk]' pivot='key' type='nominal' />
+            <column-instance column='[total_amount]' derivation='Sum' name='[sum:total_amount:qk]' pivot='key' type='quantitative' />
+            <column caption='Total Amount' datatype='real' name='[total_amount]' role='measure' type='quantitative' />
+          </datasource-dependencies>
+          <aggregation value='true' />
+        </view>
+        <style />
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Automatic' />
+          </pane>
+        </panes>
+        <rows>[federated.1tu2nf71a0m66u18igspf1fp4vuc].[sum:total_amount:qk]</rows>
+        <cols>[federated.1tu2nf71a0m66u18igspf1fp4vuc].[none:cohort:nk]</cols>
+      </table>
+      <simple-id uuid='{09DB6C5D-962A-4C85-9B10-29F17B6CC764}' />
+    </worksheet>
+    <worksheet name='Sheet 2'>
+      <layout-options>
+        <title>
+          <formatted-text>
+            <run>Number of cash requests per cohort</run>
+          </formatted-text>
+        </title>
+      </layout-options>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='New cash table2' name='federated.038fhsk0s1xanp1e45ekp153hlg8' />
+          </datasources>
+          <datasource-dependencies datasource='federated.038fhsk0s1xanp1e45ekp153hlg8'>
+            <column-instance column='[created_at]' derivation='Count' name='[cnt:created_at:qk]' pivot='key' type='quantitative' />
+            <column caption='Cohort' datatype='string' name='[cohort]' role='dimension' type='nominal' />
+            <column caption='Created At' datatype='string' name='[created_at]' role='dimension' type='nominal' />
+            <column-instance column='[cohort]' derivation='None' name='[none:cohort:nk]' pivot='key' type='nominal' />
+          </datasource-dependencies>
+          <aggregation value='true' />
+        </view>
+        <style />
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Automatic' />
+          </pane>
+        </panes>
+        <rows>[federated.038fhsk0s1xanp1e45ekp153hlg8].[cnt:created_at:qk]</rows>
+        <cols>[federated.038fhsk0s1xanp1e45ekp153hlg8].[none:cohort:nk]</cols>
+      </table>
+      <simple-id uuid='{1A7C2BAA-C090-41B9-9014-684CB5B8500C}' />
+    </worksheet>
+    <worksheet name='Sheet 3'>
+      <layout-options>
+        <title>
+          <formatted-text>
+            <run>Issues per cohort</run>
+          </formatted-text>
+        </title>
+      </layout-options>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='New cash table2' name='federated.038fhsk0s1xanp1e45ekp153hlg8' />
+          </datasources>
+          <datasource-dependencies datasource='federated.038fhsk0s1xanp1e45ekp153hlg8'>
+            <column-instance column='[recovery_status]' derivation='Count' name='[cnt:recovery_status:qk]' pivot='key' type='quantitative' />
+            <column caption='Cohort' datatype='string' name='[cohort]' role='dimension' type='nominal' />
+            <column-instance column='[cohort]' derivation='None' name='[none:cohort:nk]' pivot='key' type='nominal' />
+            <column caption='Recovery Status' datatype='string' name='[recovery_status]' role='dimension' type='nominal' />
+          </datasource-dependencies>
+          <aggregation value='true' />
+        </view>
+        <style />
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Automatic' />
+          </pane>
+        </panes>
+        <rows>[federated.038fhsk0s1xanp1e45ekp153hlg8].[cnt:recovery_status:qk]</rows>
+        <cols>[federated.038fhsk0s1xanp1e45ekp153hlg8].[none:cohort:nk]</cols>
+      </table>
+      <simple-id uuid='{1014845B-1158-4A24-8CDD-0EF4F058B112}' />
+    </worksheet>
+    <worksheet name='Sheet 4'>
+      <layout-options>
+        <title>
+          <formatted-text>
+            <run>Cash Request quantity per cohort</run>
+          </formatted-text>
+        </title>
+      </layout-options>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='New cash table2' name='federated.038fhsk0s1xanp1e45ekp153hlg8' />
+          </datasources>
+          <datasource-dependencies datasource='federated.038fhsk0s1xanp1e45ekp153hlg8'>
+            <column caption='Amount' datatype='real' name='[amount]' role='measure' type='quantitative' />
+            <column caption='Cohort' datatype='string' name='[cohort]' role='dimension' type='nominal' />
+            <column-instance column='[cohort]' derivation='None' name='[none:cohort:nk]' pivot='key' type='nominal' />
+            <column-instance column='[amount]' derivation='Sum' name='[sum:amount:qk]' pivot='key' type='quantitative' />
+          </datasource-dependencies>
+          <aggregation value='true' />
+        </view>
+        <style />
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Automatic' />
+          </pane>
+        </panes>
+        <rows>[federated.038fhsk0s1xanp1e45ekp153hlg8].[sum:amount:qk]</rows>
+        <cols>[federated.038fhsk0s1xanp1e45ekp153hlg8].[none:cohort:nk]</cols>
+      </table>
+      <simple-id uuid='{469B0048-8E60-4E79-A0E8-2F0DEC1B47C4}' />
+    </worksheet>
+  </worksheets>
+  <windows saved-dpi-scale-factor='1.5' source-height='75'>
+    <window class='worksheet' name='Sheet 1'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='30'>
+            <card type='title' />
+          </strip>
+        </edge>
+      </cards>
+      <viewpoint>
+        <highlight>
+          <color-one-way>
+            <field>[federated.1tu2nf71a0m66u18igspf1fp4vuc].[none:cohort:nk]</field>
+          </color-one-way>
+        </highlight>
+      </viewpoint>
+      <simple-id uuid='{A604C3E5-EDD8-4A20-BDFC-60C982D03A92}' />
+    </window>
+    <window class='worksheet' name='Sheet 2'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='30'>
+            <card type='title' />
+          </strip>
+        </edge>
+      </cards>
+      <viewpoint>
+        <highlight>
+          <color-one-way>
+            <field>[federated.038fhsk0s1xanp1e45ekp153hlg8].[none:cohort:nk]</field>
+            <field>[federated.038fhsk0s1xanp1e45ekp153hlg8].[none:created_at:nk]</field>
+            <field>[federated.038fhsk0s1xanp1e45ekp153hlg8].[yr:cash_request_received_date:ok]</field>
+          </color-one-way>
+        </highlight>
+      </viewpoint>
+      <simple-id uuid='{F30A4B5A-EBCB-4624-AEA0-40E221184960}' />
+    </window>
+    <window class='worksheet' name='Sheet 3'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='30'>
+            <card type='title' />
+          </strip>
+        </edge>
+      </cards>
+      <viewpoint>
+        <highlight>
+          <color-one-way>
+            <field>[federated.038fhsk0s1xanp1e45ekp153hlg8].[none:cohort:nk]</field>
+            <field>[federated.038fhsk0s1xanp1e45ekp153hlg8].[none:recovery_status:nk]</field>
+          </color-one-way>
+        </highlight>
+      </viewpoint>
+      <simple-id uuid='{D438163E-08F6-414F-B35F-2419B5584F8F}' />
+    </window>
+    <window class='worksheet' maximized='true' name='Sheet 4'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='30'>
+            <card type='title' />
+          </strip>
+        </edge>
+      </cards>
+      <viewpoint>
+        <highlight>
+          <color-one-way>
+            <field>[federated.038fhsk0s1xanp1e45ekp153hlg8].[none:cohort:nk]</field>
+          </color-one-way>
+        </highlight>
+      </viewpoint>
+      <simple-id uuid='{D8B17D7E-EE42-4110-A203-F04D5712B38A}' />
+    </window>
+  </windows>
+  <thumbnails>
+    <thumbnail height='192' name='Sheet 1' width='192'>
+      iVBORw0KGgoAAAANSUhEUgAAAMAAAADACAYAAABS3GwHAAAACXBIWXMAABYlAAAWJQFJUiTw
+      AAAYnUlEQVR4nO3deWyc+X3f8fcz9z28h4coihJFkaJ461xptVlnndi7zqJufcD2unVcw0Ab
+      o0HQpmnQIt1/2jopHCMoNrERoKndXSNBmiD2to7b9NjV6ljdJ0UdFCXew3OGcx/PPL/+QYpa
+      WhJp8xjRer4vQFhqdn6/5zvPPB8+v+fQ79GUUgohTMryrAsQ4lmSAAhTkwCIZ8Bg6P4QxrMu
+      AwmA2ESnf/wD/vm/+G3+4K3/Sm7Z1p7n3R/+mMIq7QfPvstfnbi5iRWCbVN7F+aVmeInF8L8
+      u2/+PnZNMT14iW9/5x0MR5Df+pe/ydxoP99883c59KmvUJno5+13PyBYu4ffeOMT/Nn33iFv
+      2LHGR7gy/j+wW36D14+1b0qZEgCxObIJbCUhnDYLGnDif5/g13/736INvsf7Z29RWtvM13/z
+      H/O354c4efom/+Y//AGnfvBd+kdniOfs/M7v/Bbj539EQ3Y3rx/bt2llyhBIbI7ANtwz1/if
+      75/hzLlLVFUFOXXiJKfP36C6pgLNYsVitQBWgl7FqQ9O0zc8RbnfQ13DTjx2K06Ph4G+K4xM
+      RjatTOubb7755qb1LsxLs9LT281g/3U0bwUvvvQSiYkBgo29HO9pxu1yU11TjcNq4/DBbgZv
+      3aTrpVdpbajC7fERqizDV1aLHhkBXyXV5YHNKbPYF8KUUiilsFhk5yOevWeyFcrFZ7FVyK9h
+      YWrrDIAiMR9hbHyCdE4HFPHoLNOzURSQTaUxgEI+SyqT34ByhdhY6wuAoTM1E0Ez8pw9e4H4
+      7DjX7owwPXKHwbE5HtzsJ60Mrl+6QKYgwx6x9az7IDibijM+PsZUrECVK4WztoNqZ5qz/WOU
+      5BPkfXYc3jpadoQwDAOlFIZhYLVaN+ozCLFm674QZhgGaFaUnqaAtviqxkKqDHK5PHbv4+3k
+      QFhsBesKgJ5NMjE9h98fYHx8mvKd27k1cIeEK0cotAN9IktrVyd3z51hqjRAVdC9tOHLHkBs
+      BesbAilFZHaK+WSWylA1Xped+blpUrqN6qoyMskkDq8XTc+SzBr4vW4ZAokt5ZlcCJMAiK1C
+      rgMIU5MACFOTAAhTkwAIU5MACFOTAAhTkwAIU5MACFOTAAhTkwAIU5MACFOTAAhTkwAIU5MA
+      CFOTAAhTkwAIU5MACFOTAAhTkwAIU5MACFOTAAhTkwAIU1vfzHBGnpvXr5PM6Rg2H70ttbx/
+      5hLBQIDtTa0kx4aobmtl5u4NLOU7qSt7whRxQjxD69sDaBZ27+2kt6cbPT5HLB7BE6hiZ1Mz
+      lUEvuXSG5PwU43ErtbLxiy1o/ZPjJqNcvHSN+j0d1JQ4mQhPk4hOo3tCWKYGeRCN0fXCL1NX
+      4qZQKCxNjKVp2uqdC7HJ1hcAI8+pD07TcegF/C476WQcze6G1AxXhuYpzSep6Wjh2tkrHDhy
+      GKfNIjPDiS1lXQFQuSRnLlzB4XDicAXYtaOSgbv3KWCjeW8rqalJSuq3kYuEieZcbAuVSADE
+      liJzgwpTk9OgwtQkAMLUJADC1CQAwtQkAMLUJADC1CQAwtQkAMLUJADC1CQAwtTW/aR4IYrp
+      J+cG+NN3L62pbWdTiN/7Ry8te00CIH6hGIZCLxhralsoPH7bmwyBhKlJAISpSQCEqUkAhKlJ
+      AISpSQCEqUkAhKlJAISpSQCEqUkAhKlt2Nygyuaju7Wei5euoiuNvR37mR8epLqthdm7fWjl
+      jTI3qNhy1hcAzULT3k5sFsWZUx8yNpIj1NRFnTvNlftDBHNpkvPTjMY0Du2WjV9sPesMgBWV
+      i/LhpWts39NObvoOXpcTu8Mgl8ui5xJ8eOoc3S+8ggbL5gY1jLXd0CTMbT3bjVIG+Xx+2Wvr
+      HgJduHB1aW7Q6WyA6bkoHm8Kny+ALZHn+Cu9XDt7iYoXDuO0WlFKoWmazAwn1sRiWfthq6ZZ
+      sNvty/tbTzFKz6HZbNy+cZVrN+5QWteEJT7K3dEYrU31lIaqcDm8dO3byfRMbD2LEmJTrGsP
+      oDm8vHD06LLXWtq7l36uqt8GgKO0Gt96FiTEJpHToMLUVg1AIh7HMBTK0Ikn08WoSYiiWTEA
+      uWyGb3/79wnPxYiN9vPv//jtYtUlRFGseAzwf9/9AX19t/nT77yFw2rl1z71uWLVJURRrBiA
+      T3zmq3Qe+ThuXxCrRcNqcxSrLiGKYtWzQO++/SdEHTX4XTZCTV38/Y8fKUZdQhTFqgGorKzh
+      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
+      RU5ErkJggg==
+    </thumbnail>
+    <thumbnail height='192' name='Sheet 2' width='192'>
+      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
+    </thumbnail>
+    <thumbnail height='192' name='Sheet 3' width='192'>
+      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
+      Ve6ekQQeAAAAAElFTkSuQmCC
+    </thumbnail>
+    <thumbnail height='192' name='Sheet 4' width='192'>
+      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
+      rkJggg==
+    </thumbnail>
+  </thumbnails>
+</workbook>
